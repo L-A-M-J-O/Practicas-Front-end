@@ -1,0 +1,12 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  background-color: rgba(141, 76, 179, 0.411);
+}
+/*# sourceMappingURL=styles.css.map */
