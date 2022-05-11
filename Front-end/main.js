@@ -273,17 +273,17 @@
 // let placa = 'XFG 630';
 // let happy = '30/09/2003';
 
-// alert ('Licensia de conduccion'+ (name + ape + age)+ 'Datos del conductor'+(sexo + peso + placa + happy));
+alert ('Licensia de conduccion'+ (name + ape + age)+ 'Datos del conductor'+(sexo + peso + placa + happy));
 
-// let perdilo = alert ('Dame 5 personajes');
+let perdilo = alert ('Dame 5 personajes');
 
-//     let p1 = String (prompt ('Primera Personaje'));
-//     let p2 = prompt ('Segundo Personaje');
-//     let p3 = prompt ('Tercero Personaje');
-//     let p4 = prompt ('Cuerto Personaje');
-//     let p5 = prompt ('Quito Personaje');
+    let p1 = String (prompt ('Primera Personaje'));
+    let p2 = prompt ('Segundo Personaje');
+    let p3 = prompt ('Tercero Personaje');
+    let p4 = prompt ('Cuerto Personaje');
+    let p5 = prompt ('Quito Personaje');
 
-//     alert ('Dame los 5 '+ (p1 + p2 + p3 + p4 + p5));
+    alert ('Dame los 5 '+ (p1 + p2 + p3 + p4 + p5));
 
 
 
