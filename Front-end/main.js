@@ -264,26 +264,30 @@
 // const c5 = 'Berlin';
 
 
-// let carnet
-// let name = 'Homero';
-// let ape = 'Simpsons'
-// let age = 18;
+// let name1 = 'Homero';
+// let ape1 = 'Simpsons'
+// let age1 = 18;
 // let sexo = 'M';
 // let peso = '64kg';
-// let placa = 'XFG 630';
+// let placa = 'XFG 630';+ ''
 // let happy = '30/09/2003';
-
-alert ('Licensia de conduccion'+ (name + ape + age)+ 'Datos del conductor'+(sexo + peso + placa + happy));
-
-let perdilo = alert ('Dame 5 personajes');
-
-    let p1 = String (prompt ('Primera Personaje'));
-    let p2 = prompt ('Segundo Personaje');
-    let p3 = prompt ('Tercero Personaje');
-    let p4 = prompt ('Cuerto Personaje');
-    let p5 = prompt ('Quito Personaje');
-
-    alert ('Dame los 5 '+ (p1 + p2 + p3 + p4 + p5));
+// let carnet  = 'Nombre: ' + ' '+ name1 + ' '+ 'Apellido: ' + ape1 + ' '+ 'Edad: ' + age1 + ''+ 'Sexo: ' + sexo + ' '+ 'Peso: ' + peso + ' '+ 'Placa: ' + placa + 'Fecha de Nacimiento: ' + ' '+ happy;
+// alert ('Tu Carnet' + carnet);
 
 
+// let perdilo = alert ('Dame 5 personajes');
+
+//     let p1 = String (prompt ('Primera Personaje'));
+//     let p2 = prompt ('Segundo Personaje');
+//     let p3 = prompt ('Tercero Personaje');
+//     let p4 = prompt ('Cuerto Personaje');
+//     let p5 = prompt ('Quito Personaje');
+//     alert ('Familia'+ ' '+ (p1 + ' ' + p2 + ' '+ p3 + ' ' + p4 + ' ' + p5));
+    
+const programa = alert ('Dame dos precios');
+
+let num0 = Number (prompt ('numero uno'))
+let num1 = Number (prompt ('numero dos'));
+
+alert ('Este es tu resultado:' + (num0 % num1) + '%' );
 
