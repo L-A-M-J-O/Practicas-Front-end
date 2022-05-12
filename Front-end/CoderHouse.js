@@ -4,7 +4,7 @@ if (pedir === 'Silla')
     alert ('Esta bien' )
     let categoria = String (prompt ('Que categorias: Silla Home, Silla Gamer, Silla Office, Silla Beach'))
 
-    if (categoria == 'Silla Home' ) 
+    if (categoria === 'Silla Home' ) 
         alert ('Comenzemos')
             for (let Inicio = 'Separa las piezas por partes'; Inicio == 'Separa las piezas por partes';  Inicio++) 
             alert (`Primero: ${Inicio}`);
