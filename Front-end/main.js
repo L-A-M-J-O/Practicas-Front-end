@@ -340,17 +340,74 @@
     //     }
 
 
-for  ( let Inicio = 1;  Inicio<=8; Inicio++) {
-    console.log (Inicio);
+// for  ( let Inicio = 1;  Inicio<=8; Inicio++) {
+//     console.log (Inicio);
 
-    if  (Inicio ===1 || Inicio === 7) {
-        console.log ('TCARRACT');
-    }
-    else if (Inicio === 2 || Inicio ===7) {
-        console.log ('pppppppp');
-    }
-    else {
-        console.log ('00000000');
-    }
-}
+//     if  (Inicio ===1 || Inicio === 7) {
+//         console.log ('TCARRACT');
+//     }
+//     else if (Inicio === 2 || Inicio ===7) {
+//         console.log ('pppppppp');
+//     }
+//     else {
+//         console.log ('00000000');
+//     }
+// }
 
+// Forma con if, esle if , esle
+
+// const enemy = 'Iron man';
+
+// let Loki = ' ';
+
+//  if (enemy === 'Iron man') {
+//      Loki = 'Magneto';
+//  }
+//  else if  (enemy === 'Thor') {
+//      Loki = 'Odin';
+//  }
+//  else if  (enemy === 'Hulk') {
+//      Loki = ' Thanos';
+//  }
+//  else  {
+//      Loki = 'Loki';
+//  }
+
+// forma switch
+
+
+// const enemy = 'Thor';
+
+// let Loki = ''
+
+// switch (enemy ) {
+//         case 'Iron man' :
+//             Loki = 'Magneto'
+//             break
+
+//         case 'Hulk' :
+//             Loki = 'Thanos'
+//             break
+        
+//         case 'Thor' :
+//             Loki = 'Odin'
+//             break
+        
+//         default :
+//         Loki = 'Loki'
+// }
+
+// Codigo mas limpio
+
+// const enemy = 'Iron man'
+
+// const   skin = {
+//     'Iron man' : 'Magneto',
+//     'Thor'  : 'Odin',
+//     'Hulk' : 'Thanos',
+// }
+// const  skind = 'Loki'
+
+// const Loki = skin [enemy] || skind 
+
+// console.log (Loki);
