@@ -251,6 +251,27 @@
 //         alert ('Multiplicacion es:'+ (num0 - num1));
 // }
 
+    // switch (programa) 
+    // {
+    //     case 'suma' : 
+    //     {
+    //         alert ('Suma es:' + (num0 + num1));
+    //         break;
+    //     }
+    //     case 'resta' :
+    //     {
+    //         alert ('Resta es:' + (num0 - num1));
+    //     }
+    //     case 'mul' :
+    //     {
+    //         alert ('Multiplicacion es' + (num0 * num1));
+    //     }
+    //     case  'div' :
+    //     {
+    //         alert ('Division es' + (num0 / num1));
+    //     }
+    // }
+
 // PRACTICA 
 
 // let name = 'Homero';
@@ -284,10 +305,52 @@
 //     let p5 = prompt ('Quito Personaje');
 //     alert ('Familia'+ ' '+ (p1 + ' ' + p2 + ' '+ p3 + ' ' + p4 + ' ' + p5));
     
-const programa = alert ('Dame dos precios');
+// const programa = alert ('Dame dos precios');
 
-let num0 = Number (prompt ('numero uno'))
-let num1 = Number (prompt ('numero dos'));
+// let num0 = Number (prompt ('numero uno'))
+// let num1 = Number (prompt ('numero dos'));
 
-alert ('Este es tu resultado:' + (num0 % num1) + '%' );
+// alert ('Este es tu resultado:' + (num0 % num1) + '%' );
+
+
+// let programa = prompt (['¿Hola Dios eres tu?'])
+
+// let name = 'Alan';
+// let name1 = null
+
+// if (name === 'Alan' ) {
+//     alert ('Si soy yo');
+// }
+// if (name1) {
+//     alert ('No fui yo');
+// }   
+
+// CICLOS
+    
+    // Inicio y un fin
+
+    // let dato = Number (prompt (['Dame un numero']));
+    
+    // if (! isNaN (dato)); {
+    //     alert ('Dato no valido');
+
+    //         for ( let  Inicio=1;  Inicio<=dato;  Inicio++) {
+    //             alert (Inicio);
+    //         }
+    //     }
+
+
+for  ( let Inicio = 1;  Inicio<=8; Inicio++) {
+    console.log (Inicio);
+
+    if  (Inicio ===1 || Inicio === 7) {
+        console.log ('TCARRACT');
+    }
+    else if (Inicio === 2 || Inicio ===7) {
+        console.log ('pppppppp');
+    }
+    else {
+        console.log ('00000000');
+    }
+}
 
