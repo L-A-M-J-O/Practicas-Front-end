@@ -399,15 +399,15 @@
 
 // Codigo mas limpio
 
-// const enemy = 'Iron man'
+const enemy = 'Iron man'
 
-// const   skin = {
-//     'Iron man' : 'Magneto',
-//     'Thor'  : 'Odin',
-//     'Hulk' : 'Thanos',
-// }
-// const  skind = 'Loki'
+const   skin = {
+    'Iron man' : 'Magneto',
+    'Thor'  : 'Odin',
+    'Hulk' : 'Thanos',
+}
+const  skind = 'Loki'
 
-// const Loki = skin [enemy] || skind 
+const Loki = skin [enemy] || skind 
 
-// console.log (Loki);
+console.log (Loki);
