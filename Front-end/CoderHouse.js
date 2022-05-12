@@ -1,3 +1,5 @@
+// MAQUINA DE SILLAS
+
 // const pedir = String (prompt ('Que quieres crear'));
 
 // if (pedir === 'Silla') 
@@ -23,6 +25,10 @@
 //             for (let Inicio = 'Y listo a disfrutar fue sencillo'; Inicio == 'Y listo a disfrutar fue sencillo';  Inicio++) { 
 //             alert (`Octavo: ${Inicio}`);
 // }
+
+
+
+// MAQUINA DE DISFRACES
 
 const categoria = prompt ('Que disfraces quieres: SuperHéroes, Piratas, Villanos')
 
