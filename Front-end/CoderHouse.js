@@ -25,15 +25,3 @@ if (pedir === 'Silla')
 }
 
    
-// for  ( let Inicio = 1;  Inicio<=8; Inicio++) {
-//     console.log (Inicio);
-
-//     if  (Inicio ===1 || Inicio === 7) {
-//         console.log ('TCARRACT');
-//     }
-//     else if (Inicio === 2 || Inicio ===7) {
-//         console.log ('pppppppp');
-//     }
-//     else {
-//         console.log ('00000000');
-//     }
