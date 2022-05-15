@@ -1,12 +1,34 @@
 * {
-  font-family: 'Montserrat', sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.box {
-  background-color: rgba(141, 76, 179, 0.411);
+.box-primary {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.562)), to(rgba(255, 255, 255, 0.096))), url(./img/pexels-binyamin-mellish-116077.jpg);
+  background: linear-gradient(top, rgba(0, 0, 0, 0.562), rgba(255, 255, 255, 0.096)), url(./img/pexels-binyamin-mellish-116077.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.box-primary .box-segundary {
+  height: 550px;
+}
+
+.box-primary .box {
+  border: 2px solid white;
+  border-radius: 4px;
+  height: 36px;
+  width: 90px;
+}
+
+.box-primary h4 {
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  font-style: italic;
+  font-family: monospace;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -414,3 +414,27 @@
 
 //  MAS PRACTICA 
 
+// const programa = prompt ('Dame una tecla');
+
+// if (programa === 'Y') {
+//     alert ('CORRECTO');
+// }
+// else if  (programa === 'y') {
+//     alert ('ERROR');
+// }
+
+// const escoger = prompt ('Que Jugador deseas 1, 2, 3, 4');
+
+// if (escoger === '1') {
+//     alert ('Escogiste a HOMERO');
+// }
+// else if (escoger === '2') {
+//     alert ('Escogiste a MARCH');
+// }
+// else if (escoger === '3') {
+//     alert ('Escogiste a BARD');
+// }
+// else if (escoger === '4') {
+//     alert ('Escogiste a LIZA');
+// }
+
