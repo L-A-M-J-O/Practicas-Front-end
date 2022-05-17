@@ -1,4 +1,98 @@
-* {
-  background-color: rgba(0, 139, 53, 0.322);
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+}
+
+.words {
+  color: #f1f1f1;
+  font-size: 0;
+  line-height: 1.5;
+}
+
+.words span {
+  font-size: 8rem;
+  display: inline-block;
+  font-weight: bold;
+  font-style: inherit;
+  -webkit-animation: move 3s ease-in-out infinite;
+          animation: move 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate(-20% 0);
+            transform: translate(-20% 0);
+  }
+  50% {
+    text-shadow: 0 35px 50px rgba(102, 51, 153, 0.568);
+  }
+  100% {
+    -webkit-transform: translate(20%, 0);
+            transform: translate(20%, 0);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(-20% 0);
+            transform: translate(-20% 0);
+  }
+  50% {
+    text-shadow: 0 35px 50px rgba(102, 51, 153, 0.568);
+  }
+  100% {
+    -webkit-transform: translate(20%, 0);
+            transform: translate(20%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.words span:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.words span:nth-child(5) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.words span:nth-child(6) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.words span:nth-child(7) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+h1 {
+  color: #1b1f1f;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h1 span {
+  -webkit-transition: .5 linear;
+  transition: .5 linear;
+}
+
+h1:hover span:nth-child(1) {
+  margin-right: 20px;
+}
+
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #FFF,  0 0 50px #FFF, 0 0 80px #FFF;
 }
 /*# sourceMappingURL=index.css.map */
