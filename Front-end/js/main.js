@@ -438,3 +438,24 @@
 //     alert ('Escogiste a LIZA');
 // }
 
+// let variable = 'contenido'
+
+// Array = ['banano', 'manzana', 'fresa'] ;
+// alert (Array [1] );
+
+
+// function sumar ( a, b)
+// {
+//     console.log( `sumar ${ a + b}`);
+// }
+
+//     const operando1 = Number (prompt ('Ingrese numeros'));
+//     const operando2 = Number (prompt ('Ingrese numeros'));
+
+// sumar (operando1, operando2) ;
+
+// function motrarMenu () 
+// {
+//     let opcion = 0;
+//     while ( opcion !== 5);
+// } 
