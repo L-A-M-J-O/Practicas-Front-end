@@ -459,3 +459,14 @@
 //     let opcion = 0;
 //     while ( opcion !== 5);
 // } 
+
+
+// const num0 = Number (prompt ('Dame un numero'));
+// const num1 = Number (prompt ('Dame otro numoero'));
+
+// function pSuma (num0, num1) {
+//     return num0 + num1
+// }
+// let resultado = pSuma (num0, num1);
+// alert (resultado);
+
