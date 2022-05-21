@@ -1,4 +1,0 @@
-function maquinaSillas () {
-}
-
-// maquinaSillas () ;
