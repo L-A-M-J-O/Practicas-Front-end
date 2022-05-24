@@ -471,3 +471,11 @@
 // alert (resultado);
 
 // * FUNCION SIMPLE
+
+function saludar ( )
+{
+    let nombreUsuario = String ( prompt ('Dame tu nombre'));
+    alert ( `Hola ${nombreUsuario}`);
+} 
+
+saludar ( );
