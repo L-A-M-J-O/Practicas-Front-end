@@ -470,3 +470,4 @@
 // let resultado = pSuma (num0, num1);
 // alert (resultado);
 
+// * FUNCION SIMPLE
