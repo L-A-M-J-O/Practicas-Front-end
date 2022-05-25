@@ -1,12 +1,13 @@
+// * Proyecto pasar a disfraces 
+
+let nombreUsuario = String (prompt ('Tu nombre ¡por favor!'));
+
+function saludar ( )
+{
+    alert (`Bienvenido ${nombreUsuario}`);
+}
+saludar ( );
 function maquina () {
-
-    let nombreUsuario = String (prompt ('Tu nombre ¡por favor!'));
-
-    function saludar ( )
-    {
-        alert (`Bienvenido ${nombreUsuario}`);
-    }
-    saludar ( );
 
     // ! let num0 = 'Silla Gaming'
    // ! let num1 = 'Silla de Verano'
@@ -51,24 +52,23 @@ function maquina () {
                 }
             }
         }
-    
-    function despedida ( ) 
-    {
-        let preguntaDeDespedida = String (prompt ('¿Quedaste Satisfecho?'));
-        for ( despedida = 0; despedida <= 10; despedida ++) 
+        function despedida ( ) 
         {
-            if (preguntaDeDespedida === 'Si') {
-                switch (despedida) {
-                    case 1 : alert (`Fue un gusto ${nombreUsuario}`)
+            let preguntaDeDespedida = String (prompt ('¿Quedaste Satisfecho?'));
+            for ( despedida = 0; despedida <= 10; despedida ++) 
+            {
+                if (preguntaDeDespedida === 'Si') {
+                    switch (despedida) {
+                        case 1 : alert (`Fue un gusto ${nombreUsuario}`)
+                    }
+                }
+                // * Esta en proceso para programar que sige si me dice que no el cliente
+                else if (preguntaDeDespedida === 'No') {
+                    switch (despedida) {
+                        case 1 :  prompt  ('¿Esta bien que mas necesitas?')
+                    }
                 }
             }
-            // * Esta en proceso para programar que sige si me dice que no el cliente
-            else if (preguntaDeDespedida === 'No') {
-                switch (despedida) {
-                    case 1 :  prompt  ('¿Esta bien que mas necesitas?')
-                }
-            }
-        }
     }
     despedida ( );
 }
