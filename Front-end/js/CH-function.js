@@ -1,4 +1,4 @@
-// * Proyecto pasar a disfraces 
+// * Proyecto pasar a disfraces a fururo
 
 let nombreUsuario = String (prompt ('Tu nombre ¡por favor!'));
 
@@ -62,12 +62,12 @@ function maquina () {
                         case 1 : alert (`Fue un gusto ${nombreUsuario}`)
                     }
                 }
-                // * Esta en proceso para programar que sige si me dice que no el cliente
-                else if (preguntaDeDespedida === 'No') {
-                    switch (despedida) {
-                        case 1 :  prompt  ('¿Esta bien que mas necesitas?')
-                    }
-                }
+                // else if (preguntaDeDespedida === 'No') {
+                //      const numeroCliente = ['Primero separa tus piezas de Silla, Segundo empieza con la base, Tercero une la base con el cuerpo, Cuarto y ultimo solo te quedaria unir el espaldar y mangos, Luego por favor verifica y te aseguro que debe estar ya tu silla armada']
+                //      for (let i = 0; i < numeroCliente.length; i++) {
+                //          alert(numeroCliente [i]);
+                //      }
+                // }
             }
     }
     despedida ( );

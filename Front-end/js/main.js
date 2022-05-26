@@ -470,12 +470,35 @@
 // let resultado = pSuma (num0, num1);
 // alert (resultado);
 
-// * FUNCION SIMPLE
+// // * FUNCION SIMPLE
 
-function saludar ( )
-{
-    let nombreUsuario = String ( prompt ('Dame tu nombre'));
-    alert ( `Hola ${nombreUsuario}`);
-} 
+// function saludar ( )
+// {
+//     let nombreUsuario = String ( prompt ('Dame tu nombre'));
+//     alert ( `Hola ${nombreUsuario}`);
+// } 
 
-saludar ( );
+// saludar ( );
+
+//  * Funciones de ORDEN SUPERIOR 
+// ! Funcion que retorna una funcion
+
+// function mayorQue (n)
+// {
+//         return (m) => m>n;
+// }
+//     const mayorQueDiez = mayorQue(10);
+    
+//     alert (mayorQueDiez (5)); 
+
+// ! Funcion que recibe funcion por parameto
+
+// function porCadaUno (arr, fun)
+// {
+//     for (const elemento of arr)
+//     {
+//             fun(elemento);
+//     }
+// }
+//     porCadaUno ([1,2,3,4,5,6,7,8], alert);
+
