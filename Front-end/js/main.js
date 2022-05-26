@@ -522,11 +522,14 @@
 //     const mixto = [30, 'Alan', false, 06, true, 'Naranjo']
 //     console.log ('TODO', mixto);
 
-const cajon = [103,93,8,7,6,5,46,34,25,10];
+// const cajon = [103,93,8,7,6,5,46,34,25,10];
 
-for (let i=0;  i<=5; i++)
-{
-    console.log (cajon [i]);
-}
+// for (let i=0;  i<=5; i++)
+// {
+//     console.log (cajon [i]);
+// }
+
+// length
+
 
 

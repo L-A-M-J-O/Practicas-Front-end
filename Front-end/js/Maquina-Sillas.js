@@ -7,13 +7,22 @@ function saludar ( )
     alert (`Bienvenido ${nombreUsuario}`);
 }
 saludar ( );
-function maquina () {
+
+function arraysMostrarSillas ( ) {
+    const numeroCliente = ['Tenemos','Sillas Gaming','Silla de Verano','Silla de Casa']
+    for (let i = 0; i <=3; i++) {
+        alert(numeroCliente [i]);
+    }
+}
+arraysMostrarSillas ( );
+
+function maquina ( ) {
 
     // ! let num0 = 'Silla Gaming'
    // ! let num1 = 'Silla de Verano'
    // ! let num2 = 'Silla de Casa'
 
-    const sillas = String (prompt ( `¿Que tipo de silla deseas armar?, Silla Gaming, Silla de Verano, Silla de Casa`));
+    const sillas = String (prompt ( `¿Que tipo de silla deseas armar?`));
         for (tipo = 0; tipo <= 10; tipo ++ ) {
             if (sillas === 'Silla Gaming'){
                 switch (tipo) {
@@ -58,7 +67,8 @@ function maquina () {
             for ( despedida = 0; despedida <= 10; despedida ++) 
             {
                 if (preguntaDeDespedida === 'Si') {
-                    switch (despedida) {
+                    switch (despedida)
+                    {
                         case 1 : alert (`Fue un gusto ${nombreUsuario}`)
                     }
                 }
@@ -66,14 +76,44 @@ function maquina () {
 
                     function info ( )
                     {
-                        alert ('Esta bien te indicare de nuevo')
+                        let pregunta1 = prompt ('Esta bien indicame que parte, 1  2  3  4  exit')
+                        for (pasos = 0; pasos <=5; pasos++)
+                        {
+                            if (pregunta1 === '1') {
+                                switch (pasos) 
+                                {
+                                    case 1 : alert ('Primero separa tus piezas de Silla')
+                                    break;
+                                }
+                            }
+                            else if (pregunta1 === '2') {
+                                switch (pasos) 
+                                {
+                                    case 1 : alert ('Segundo empieza con la base')
+                                    break;
+                                }
+                            }
+                            else if (pregunta1 === '3') {
+                                switch (pasos) 
+                                {
+                                    case 1 : alert ('Tercero une la base con el cuerpo')
+                                    break;
+                                }
+                            }
+                            else if (pregunta1 === '4') {
+                                switch (pasos) 
+                                {
+                                    case 1 : alert ('Cuarto y ultimo solo te quedaria unir el espaldar y mangos')
+                                    break;
+                                }
+                            }
+                            else if (pregunta1=== 'exit') {
+                                alert (`Fue un gustaso ${nombreUsuario}`);
+                                break;
+                            }
+                        }
                     }
-                    info ( );
-                     const numeroCliente = ['Primero separa tus piezas de Silla', 'Segundo empieza con la base', 'Tercero une la base con el cuerpo', 'Cuarto y ultimo solo te quedaria unir el espaldar y mangos', 'Luego por favor verifica y te aseguro que debe estar ya tu silla armada']
-                     for (let i = 0; i <=4; i++) {
-                         alert(numeroCliente [i]);
-                     }
-                     break;
+                    info ();
                 }
             }
     }
