@@ -62,12 +62,19 @@ function maquina () {
                         case 1 : alert (`Fue un gusto ${nombreUsuario}`)
                     }
                 }
-                // else if (preguntaDeDespedida === 'No') {
-                //      const numeroCliente = ['Primero separa tus piezas de Silla, Segundo empieza con la base, Tercero une la base con el cuerpo, Cuarto y ultimo solo te quedaria unir el espaldar y mangos, Luego por favor verifica y te aseguro que debe estar ya tu silla armada']
-                //      for (let i = 0; i < numeroCliente.length; i++) {
-                //          alert(numeroCliente [i]);
-                //      }
-                // }
+                else if (preguntaDeDespedida === 'No') {
+
+                    function info ( )
+                    {
+                        alert ('Esta bien te indicare de nuevo')
+                    }
+                    info ( );
+                     const numeroCliente = ['Primero separa tus piezas de Silla', 'Segundo empieza con la base', 'Tercero une la base con el cuerpo', 'Cuarto y ultimo solo te quedaria unir el espaldar y mangos', 'Luego por favor verifica y te aseguro que debe estar ya tu silla armada']
+                     for (let i = 0; i <=4; i++) {
+                         alert(numeroCliente [i]);
+                     }
+                     break;
+                }
             }
     }
     despedida ( );

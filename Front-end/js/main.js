@@ -502,3 +502,31 @@
 // }
 //     porCadaUno ([1,2,3,4,5,6,7,8], alert);
 
+// Arrays Numeros
+
+//     const misNumeros = [100,24,49,55,29];
+//     console.log ('NUMBER', misNumeros);
+
+// // Arrays  Cadenas
+
+//     const misPalabras = ['Hola', 'Mi', 'Nombre', 'Es', 'Alan'];
+//     console.log ('STRING',misPalabras);
+
+// // Arrays Booleanos 
+
+//     const misBoleanos = [true,false,true,false];
+//     console.log ('BOOLEANOS', misBoleanos);
+
+// // Arrays Mixtos 
+
+//     const mixto = [30, 'Alan', false, 06, true, 'Naranjo']
+//     console.log ('TODO', mixto);
+
+const cajon = [103,93,8,7,6,5,46,34,25,10];
+
+for (let i=0;  i<=5; i++)
+{
+    console.log (cajon [i]);
+}
+
+
