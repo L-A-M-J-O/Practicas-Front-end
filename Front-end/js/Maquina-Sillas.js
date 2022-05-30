@@ -67,13 +67,9 @@ function maquina ( ) {
             for ( despedida = 0; despedida <= 10; despedida ++) 
             {
                 if (preguntaDeDespedida === 'Si') {
-                    switch (despedida)
-                    {
-                        case 1 : alert (`Fue un gusto ${nombreUsuario}`)
-                    }
+                    alert (`Fue un gusto ${nombreUsuario}`)
                 }
-                else if (preguntaDeDespedida === 'No') {
-
+                else if (preguntaDeDespedida === 'No') {    
                     function info ( )
                     {
                         let pregunta1 = prompt ('Esta bien indicame que parte, 1  2  3  4  exit')
@@ -109,7 +105,6 @@ function maquina ( ) {
                             }
                             else if (pregunta1=== 'exit') {
                                 alert (`Fue un gustaso ${nombreUsuario}`);
-                                break;
                             }
                         }
                     }

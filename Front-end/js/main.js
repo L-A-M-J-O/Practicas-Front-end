@@ -531,5 +531,22 @@
 
 // length
 
+// ? OBJETOS
 
+// ? creacion de un objeto - forma 1
 
+// let niky =  new Object (
+//     niky.nombre = 'Ayla',
+//     niky['edad'] = 18
+// )
+
+let persona = 
+{
+    name : 'Alan', 
+    edad : 18,
+    color : 'Amarillo',
+    estudios : ['Desarrollo web', 'React Js', 'React Native'],
+    altura : 1.60
+}
+
+console.log (`Mi name es: ${persona.name}`);
