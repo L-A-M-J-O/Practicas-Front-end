@@ -540,13 +540,51 @@
 //     niky['edad'] = 18
 // )
 
-let persona = 
-{
-    name : 'Alan', 
-    edad : 18,
-    color : 'Amarillo',
-    estudios : ['Desarrollo web', 'React Js', 'React Native'],
-    altura : 1.60
-}
+// let persona = 
+// {
+//     name : 'Alan', 
+//     edad : 18,
+//     color : 'Amarillo',
+//     estudios : ['Desarrollo web', 'React Js', 'React Native'],
+//     altura : 1.60
+// }
 
-console.log (`Mi name es: ${persona.name}`);
+// console.log (`Mi name es: ${persona.name}`);
+
+//! DOM
+
+// const nodoPrincipal = document.body;
+// console.log (nodoPrincipal);
+
+
+// * getElementsByid
+
+// const nodoDiv = document.getElementById ('miContenido');
+// console.log (nodoDiv);
+
+
+// * getElementsByClassName
+
+// const nodoSpan = document.getElementsByClassName ('mySpan');
+// console.log (nodoSpan);
+
+
+// //* getElemetsByTagName 
+
+// const nodoH1 = document.getElementsByTagName ('h1');
+// console.log (nodoH1);
+
+// for (let span of nodoSpan)
+// {
+//     console.log (span);
+// }
+
+// let nombre = prompt ('Ingrese su nombre');
+
+// const h1= document.getElementsByTagName ('h1') [0];
+// h1.innerText = `!Bienvenido!. ${nombre}`;
+
+
+// const div = document.getElementById ('miContenido');
+// div.innerHTML = `<h2>HI CEO</h2>`
+
