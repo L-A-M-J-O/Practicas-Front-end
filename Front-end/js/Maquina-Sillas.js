@@ -1,20 +1,36 @@
-// * Proyecto pasar a disfraces a fururo
+//* Proyecto pasar a disfraces a furur
 
 let nombreUsuario = String (prompt ('Tu nombre ¡por favor!'));
 
+
+function bienvenido ( ) 
+ {
+     alert (`¡Bienvenido! ${nombreUsuario}`);
+ }
+
+ bienvenido ( );
 function saludar ( )
 {
-    alert (`Bienvenido ${nombreUsuario}`);
+    const nodoH4 = document.getElementsByTagName ('h4');
+    console.log (nodoH4);
+
+    const h1= document.getElementsByTagName ('h1') [0];
+    h1.innerText = `!Espero te alla servido!. ${nombreUsuario}`;  
 }
 saludar ( );
 
 function arraysMostrarSillas ( ) {
-    const numeroCliente = ['Tenemos','Sillas Gaming','Silla de Verano','Silla de Casa']
-    for (let i = 0; i <=3; i++) {
+    const numeroCliente = ['Tenemos','Sillas Gaming','Silla de Verano','Silla de Casa','Moonnigth']
+    for (let i = 0; i <=4; i++) {
         alert(numeroCliente [i]);
     }
 }
 arraysMostrarSillas ( );
+
+
+
+let enemyMoon = ['Thanos', 'Diosa Rauw','Batman'];
+
 
 function maquina ( ) {
 
@@ -22,7 +38,7 @@ function maquina ( ) {
    // ! let num1 = 'Silla de Verano'
    // ! let num2 = 'Silla de Casa'
 
-    const sillas = String (prompt ( `¿Que tipo de silla deseas armar?`));
+    const sillas = String (prompt ( `¿Que vas a escoger?`));
         for (tipo = 0; tipo <= 10; tipo ++ ) {
             if (sillas === 'Silla Gaming'){
                 switch (tipo) {
@@ -59,6 +75,17 @@ function maquina ( ) {
                     case 4 : alert ('Cuarto y ultimo solo te quedaria unir el espaldar y mangos')
                     break;
                 }
+            }
+            else if (sillas === 'Moon') {
+
+                let  moonNigth = 
+                    {
+                        estatura : '1.80',
+                        color: 'Verder',
+                        genero: 'Masculino',
+                        edad: '100'
+                    };
+                alert (`Este es MoonNigth ${moonNigth}`);
             }
         }
         function despedida ( ) 
@@ -104,7 +131,7 @@ function maquina ( ) {
                                 }
                             }
                             else if (pregunta1=== 'exit') {
-                                alert (`Fue un gustaso ${nombreUsuario}`);
+                                alert (`Fue un gusto ${nombreUsuario}`);
                             }
                         }
                     }
@@ -115,3 +142,5 @@ function maquina ( ) {
     despedida ( );
 }
 maquina ( );
+
+

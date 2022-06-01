@@ -571,20 +571,55 @@
 
 // //* getElemetsByTagName 
 
-// const nodoH1 = document.getElementsByTagName ('h1');
-// console.log (nodoH1);
+const nodoH1 = document.getElementsByTagName ('h1');
+console.log (nodoH1);
 
-// for (let span of nodoSpan)
+for (let span of nodoSpan)
+{
+    console.log (span);
+}
+
+let nombre = prompt ('Ingrese su nombre');
+
+const h1= document.getElementsByTagName ('h1') [0];
+h1.innerText = `!Bienvenido!. ${nombre}`;
+
+w
+const div = document.getElementById ('miContenido');
+div.innerHTML = `<h2>HI CEO</h2>`
+
+
+// ! FUNCIONES
+
+// function sumar (a,b)
 // {
-//     console.log (span);
+//     console.log (`Suma es: ${a + b}`);
+//     return 'Exelente suma';
+// }
+    
+//     const op1 = Number (prompt ('Ingrese un num'))
+//     const op2 = Number (prompt ('Ingrese un num'))
+//     alert (gracias);
+
+// function multiplicacion (x, y) 
+// {
+//     const resultado = x * y;
+//     return resultado;
+// }
+//     const num1 = Number (prompt ('Dame un numero'));
+//     const num2 = Number (prompt ('Dame otro numero'));
+
+// let  resiveElResultado = multiplicacion (num1, num2);
+
+// alert (`Multiplicacion : ${resiveElResultado} `);
+
+
+// function hola () 
+// {
+//     const usuario = String (prompt ('Tu nombre'));
+//     return usuario
 // }
 
-// let nombre = prompt ('Ingrese su nombre');
+// const nombre = hola ( usuario );
 
-// const h1= document.getElementsByTagName ('h1') [0];
-// h1.innerText = `!Bienvenido!. ${nombre}`;
-
-
-// const div = document.getElementById ('miContenido');
-// div.innerHTML = `<h2>HI CEO</h2>`
-
+// alert (`tu nombre es: ${ usuario}`);
