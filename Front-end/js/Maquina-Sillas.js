@@ -1,6 +1,15 @@
 //* Proyecto pasar a disfraces a furur
 
 let nombreUsuario = String (prompt ('Tu nombre ¡por favor!'));
+const moonNigth = 
+{
+    estatura : '1.80',
+    color: 'Black',
+    genero: 'Masculino',
+    edad: '100'
+};
+
+let enemyMoon = ['Thanos', 'Diosa Rauw','Batman'];
 
 
 function bienvenido ( ) 
@@ -26,12 +35,6 @@ function arraysMostrarSillas ( ) {
     }
 }
 arraysMostrarSillas ( );
-
-
-
-let enemyMoon = ['Thanos', 'Diosa Rauw','Batman'];
-
-
 function maquina ( ) {
 
     // ! let num0 = 'Silla Gaming'
@@ -77,15 +80,12 @@ function maquina ( ) {
                 }
             }
             else if (sillas === 'Moon') {
-
-                let  moonNigth = 
-                    {
-                        estatura : '1.80',
-                        color: 'Verder',
-                        genero: 'Masculino',
-                        edad: '100'
-                    };
-                alert (`Este es MoonNigth ${moonNigth}`);
+                switch (tipo) {
+                    case 1 : alert (`Este es MoonNigth Estatura ${moonNigth.estatura} , Color Representativo ${moonNigth.color} ,  Edad ${moonNigth.edad} ,  Genero ${moonNigth.genero}`); 
+                    break;
+                    case 2 : alert (`Sus enemigos son ${enemyMoon}`)
+                    break;
+                }  
             }
         }
         function despedida ( ) 
