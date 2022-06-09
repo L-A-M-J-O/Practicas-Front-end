@@ -571,22 +571,22 @@
 
 // //* getElemetsByTagName 
 
-const nodoH1 = document.getElementsByTagName ('h1');
-console.log (nodoH1);
+// const nodoH1 = document.getElementsByTagName ('h1');
+// console.log (nodoH1);
 
-for (let span of nodoSpan)
-{
-    console.log (span);
-}
+// for (let span of nodoSpan)
+// {
+//     console.log (span);
+// }
 
-let nombre = prompt ('Ingrese su nombre');
+// let nombre = prompt ('Ingrese su nombre');
 
-const h1= document.getElementsByTagName ('h1') [0];
-h1.innerText = `!Bienvenido!. ${nombre}`;
+// const h1= document.getElementsByTagName ('h1') [0];
+// h1.innerText = `!Bienvenido!. ${nombre}`;
 
-w
-const div = document.getElementById ('miContenido');
-div.innerHTML = `<h2>HI CEO</h2>`
+// w
+// const div = document.getElementById ('miContenido');
+// div.innerHTML = `<h2>HI CEO</h2>`
 
 
 // ! FUNCIONES
@@ -623,3 +623,19 @@ div.innerHTML = `<h2>HI CEO</h2>`
 // const nombre = hola ( usuario );
 
 // alert (`tu nombre es: ${ usuario}`);
+
+//* EVENTOS
+
+const boton1 = document.getElementById ('miBoton1');
+boton.addEventListener ('click', ( ) => 
+{
+    alert ('Hola')
+})
+
+const boton2 = document.getElementById ('miBoton2');
+boton2.onclick = ( ) =>
+ {
+     boton2.innerHTML = 'Hola Asigname una funcion'
+};
+
+const boton3 = document/getElementById ('miBoton3');
