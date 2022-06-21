@@ -626,16 +626,80 @@
 
 //* EVENTOS
 
-const boton1 = document.getElementById ('miBoton1');
-boton.addEventListener ('click', ( ) => 
-{
-    alert ('Hola')
-})
+// const boton1 = document.getElementById ('miBoton1');
+// boton.addEventListener ('click', ( ) => 
+// {
+//     alert ('Hola')
+// })
 
-const boton2 = document.getElementById ('miBoton2');
-boton2.onclick = ( ) =>
- {
-     boton2.innerHTML = 'Hola Asigname una funcion'
-};
+// const boton2 = document.getElementById ('miBoton2');
+// boton2.onclick = ( ) =>
+//  {
+//      boton2.innerHTML = 'Hola Asigname una funcion'
+// };
 
-const boton3 = document/getElementById ('miBoton3');
+// const boton3 = document/getElementById ('miBoton3');
+
+// const carta = 
+// {
+//     id : '702929',
+//     color : 'rojo',
+//     valor : '3',
+//     tipo : 'normal',
+// }
+// // dato general
+// console.log (carta);
+// // dato individual
+// console.log (carta.color);
+// // cambiar la propiedad 
+// carta.valor = 9;
+// console.log (carta.valor);
+
+    // function Carta (a, b, c, d ) 
+    // {
+    //     this.id = a
+    //     this.valor = b
+    //     this.color = c
+    //     this.tipo = d
+    // }
+
+    // const cartaUnoRojo = new Carta (45, 1, 'naranja', 'legendary')
+    // const cartaDosRojo = new Carta (50, 2, 'Azul', 'normal')
+    // const cartaReverseRojo =  new Carta (35, 3, 'verde', 'epica')
+
+    // // console.log (cartaUnoRojo, cartaDosRojo, cartaReverseRojo);
+
+    // function SuperHeroes (estatura, color, genero, edad, poder, arma) 
+    // {
+    //     this.estatura = estatura
+    //     this.color = color
+    //     this.genero = genero
+    //     this.edad = edad
+    //     this.poder = poder
+    //     this.arma = arma
+    // }    
+    //     const thor = new  SuperHeroes ('2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir')
+    //     const  moonNigth = new SuperHeroes ('1.80 Metros', 'Black', 'Masculino', '100 años', 'Combate cuerpo a cuerpor', 'Distintas armas como lanza dardos');
+        
+
+// function saludar (nombre )
+// {
+//     return 'Hola' + nombre
+// }
+// console.log(saludar ('Alan'))
+
+// let saludo = function (nombre) 
+// {
+//     return 'Saludos' + nombre
+// }
+// console.log (saludo('Alan'));
+
+
+// let saludo2 = () => 'Saludos' + nombre;
+
+// let suma = (a, b) => a + b;
+
+
+const thor = ['2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir']
+console.log (thor);
+

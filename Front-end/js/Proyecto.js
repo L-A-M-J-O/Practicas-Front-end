@@ -1,36 +1,78 @@
 // //* Proyecto pasar a disfraces a fururo
 
-const boton = document.getElementById ('miBoton');
-boton.addEventListener ('click', ( ) =>
+function SuperHeroes (a, b, c, d, h, j) 
 {
-    alert ('HOLA BIENVENIDO');
-})
+    this.estatura = a
+    this.color = b
+    this.genero = c
+    this.edad = d
+    this.poder = h
+    this.arma = j
+}
+    const thor = new  SuperHeroes ('2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir');
+    const  moonNigth = new SuperHeroes ('1.80 Metros', 'Black', 'Masculino', '100 años', 'Combate cuerpo a cuerpor', 'Distintas armas como lanza dardos');
+    const capitanAmerica = new SuperHeroes ('1.90 Metros', 'Azul', 'Masculino', '102 años', 'Agilidad', 'Escudo de vibranio' );
+    const loki = new SuperHeroes ('2.08 Metros', 'Verde & Black', 'Masculino', '106 años', 'Inteligencia sobrehumana', 'Fetro');
+    const thanos = new SuperHeroes ('4.10 Metros', 'Blanco', 'Masculino', '90 años', 'Inmortalidad', 'Espada')
+    const hulk = new SuperHeroes ('4.08 Metros', 'Verde', 'Masculino', '56 años', 'Fuerza & Agresivo','No porta armas');
+    
+function saludar ( )
+{
+    let nombreUsuario = String (prompt ('Tu nombre ¡por favor!'));
+    const h1= document.getElementsByTagName ('h1') [0];
+    h1.innerText = `¡Bienvenido!. ${nombreUsuario}`;  
+}
 
-// let nombreUsuario = String (prompt ('Tu nombre ¡por favor!'));
-// const moonNigth = 
-// {
-//     estatura : '1.80',
-//     color: 'Black',
-//     genero: 'Masculino',
-//     edad: '100'
-// };
+function mostrarS ( )
+{
+    const ListaSuper = ['Thor', 'Loki', 'Hulk', 'MoonNigth', 'Capitan America', 'Thanos']
+}
 
-// let enemyMoon = ['Thanos', 'Diosa Rauw','Batman'];
-// function bienvenido ( ) 
-//  {
-//      alert (`¡Bienvenido! ${nombreUsuario}`);
-//  }
 
-//  bienvenido ( );
-// function saludar ( )
-// {
-//     const nodoH4 = document.getElementsByTagName ('h4');
-//     console.log (nodoH4);
 
-//     const h1= document.getElementsByTagName ('h1') [0];
-//     h1.innerText = `!Espero te alla servido!. ${nombreUsuario}`;  
-// }
-// saludar ( );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ** TRABAJO DE SILLA **//
 
 // function arraysMostrarSillas ( ) {
 //     const numeroCliente = ['Tenemos','Sillas Gaming','Silla de Verano','Silla de Casa','Moonnigth']
