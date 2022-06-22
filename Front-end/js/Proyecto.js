@@ -15,6 +15,8 @@ function SuperHeroes (a, b, c, d, h, j)
     const loki = new SuperHeroes ('2.08 Metros', 'Verde & Black', 'Masculino', '106 años', 'Inteligencia sobrehumana', 'Fetro');
     const thanos = new SuperHeroes ('4.10 Metros', 'Blanco', 'Masculino', '90 años', 'Inmortalidad', 'Espada')
     const hulk = new SuperHeroes ('4.08 Metros', 'Verde', 'Masculino', '56 años', 'Fuerza & Agresivo','No porta armas');
+
+    alert (thor);
     
 function saludar ( )
 {
