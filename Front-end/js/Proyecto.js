@@ -1,77 +1,51 @@
-// //* Proyecto pasar a disfraces a fururo
 
-function SuperHeroes (a, b, c, d, h, j) 
-{
-    this.estatura = a
-    this.color = b
-    this.genero = c
-    this.edad = d
-    this.poder = h
-    this.arma = j
-}
-    const thor = new  SuperHeroes ('2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir');
-    const  moonNigth = new SuperHeroes ('1.80 Metros', 'Black', 'Masculino', '100 años', 'Combate cuerpo a cuerpor', 'Distintas armas como lanza dardos');
-    const capitanAmerica = new SuperHeroes ('1.90 Metros', 'Azul', 'Masculino', '102 años', 'Agilidad', 'Escudo de vibranio' );
-    const loki = new SuperHeroes ('2.08 Metros', 'Verde & Black', 'Masculino', '106 años', 'Inteligencia sobrehumana', 'Fetro');
-    const thanos = new SuperHeroes ('4.10 Metros', 'Blanco', 'Masculino', '90 años', 'Inmortalidad', 'Espada')
-    const hulk = new SuperHeroes ('4.08 Metros', 'Verde', 'Masculino', '56 años', 'Fuerza & Agresivo','No porta armas');
+// function SuperHeroes (a, b, c, d, h, j) 
+// {
+//     this.estatura = a
+//     this.color = b
+//     this.genero = c
+//     this.edad = d
+//     this.poder = h
+//     this.arma = j
+// }
+//     const thorObject= new  SuperHeroes ('2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir');
+//     const  moonNigthObject = new SuperHeroes ('1.80 Metros', 'Black', 'Masculino', '100 años', 'Combate cuerpo a cuerpor', 'Distintas armas como lanza dardos');
+//     const capitanAmericaObject = new SuperHeroes ('1.90 Metros', 'Azul', 'Masculino', '102 años', 'Agilidad', 'Escudo de vibranio' );
+//     const lokiObject = new SuperHeroes ('2.08 Metros', 'Verde & Black', 'Masculino', '106 años', 'Inteligencia sobrehumana', 'Fetro');
+//     const thanosObject = new SuperHeroes ('4.10 Metros', 'Blanco', 'Masculino', '90 años', 'Inmortalidad', 'Espada')
+//     const hulkObject = new SuperHeroes ('4.08 Metros', 'Verde', 'Masculino', '56 años', 'Fuerza & Agresivo','No porta armas');
 
-    alert (thor);
-    
-function saludar ( )
-{
-    let nombreUsuario = String (prompt ('Tu nombre ¡por favor!'));
-    const h1= document.getElementsByTagName ('h1') [0];
-    h1.innerText = `¡Bienvenido!. ${nombreUsuario}`;  
-}
+// function saludar ( )
+// {
+//     let nombreUsuario = String (prompt ('Tu nombre ¡por favor!'));
+//     const h1= document.getElementsByTagName ('h1') [0];
+//     h1.innerText = `¡Bienvenido!. ${nombreUsuario}`;  
+// }
+// saludar ( );
 
-function mostrarS ( )
-{
-    const ListaSuper = ['Thor', 'Loki', 'Hulk', 'MoonNigth', 'Capitan America', 'Thanos']
-}
+// const  thor = ['Thor', '2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir'];
+// const moonNigth = ['Moon Nigth', '1.80 Metros', 'Black', 'Masculino', '100 años', 'Combate cuerpo a cuerpor', 'Distintas armas como lanza dardos']
+// const capitanAmerica = ['Capitan America','1.90 Metros', 'Azul', 'Masculino', '102 años', 'Agilidad', 'Escudo de vibranio']
+// const loki = ['Loki','2.08 Metros', 'Verde & Black', 'Masculino', '106 años', 'Inteligencia sobrehumana', 'Fetro']
+// const thanos = ['Thanos','4.10 Metros', 'Blanco', 'Masculino', '90 años', 'Inmortalidad', 'Espada']
+// const hulk = ['Hulk','4.08 Metros', 'Verde', 'Masculino', '56 años', 'Fuerza & Agresivo','No porta armas']
 
+// const listSuperHeroes = [`${thor[0]} ${moonNigth[0]} ${capitanAmerica[0]} ${loki[0]} ${thanos[0]} ${hulk[0]}`]
 
-
-
-
-
-
-
-
-
+// function mostrarSuperHeroes( ) {
+//     for (let i = 0; i <=6; i++) {
+//     }
+//  }
+//  mostrarSuperHeroes ( );
 
 
 
+const div = document.getElementById ('miContenido')
+div.innerHTML = `<b>Esto es negrita</b>`;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// La idea es que pregunte que es lo que quiere de los superheroes y despues de ello poder hacer que cambie el texto en html y luego poder cuadrat el html con imaganes y la descripcion
 
 
 // ** TRABAJO DE SILLA **//

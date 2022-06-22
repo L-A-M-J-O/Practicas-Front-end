@@ -703,3 +703,18 @@
 const thor = ['2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir']
 console.log (thor);
 
+
+const nodoPrincipal = document.body
+console.log (nodoPrincipal);
+
+const nodoDiv = document.getElementById ('miContenido');
+console.log (nodoDiv);
+
+const  nodoSpan = document.getElementsByClassName ('mySpan')
+console.log (nodoSpan);
+
+const  nodoH1 = document.getElementsByTagName ('h1')
+console.log (nodoH1);
+
+const div = document.getElementById ('miContenido')
+div.innerHTML = `<b>Esto es negrita</b>`;
