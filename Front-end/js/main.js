@@ -700,21 +700,43 @@
 // let suma = (a, b) => a + b;
 
 
-const thor = ['2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir']
-console.log (thor);
+// const thor = ['2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir']
+// console.log (thor);
 
 
-const nodoPrincipal = document.body
-console.log (nodoPrincipal);
+// const nodoPrincipal = document.body
+// console.log (nodoPrincipal);
 
-const nodoDiv = document.getElementById ('miContenido');
-console.log (nodoDiv);
+// const nodoDiv = document.getElementById ('miContenido');
+// console.log (nodoDiv);
 
-const  nodoSpan = document.getElementsByClassName ('mySpan')
-console.log (nodoSpan);
+// const  nodoSpan = document.getElementsByClassName ('mySpan')
+// console.log (nodoSpan);
 
-const  nodoH1 = document.getElementsByTagName ('h1')
-console.log (nodoH1);
+// const  nodoH1 = document.getElementsByTagName ('h1')
+// console.log (nodoH1);
 
-const div = document.getElementById ('miContenido')
-div.innerHTML = `<b>Esto es negrita</b>`;
+// const div = document.getElementById ('miContenido')
+// div.innerHTML = `<b>Esto es negrita</b>`;
+
+
+function saludar ( ) 
+{
+    const btn = document.getElementById ('btn')
+        btn.addEventListener ('click', 
+        ( )=> {
+Swal.fire({
+  title: 'Sweet!',
+  text: 'Modal with a custom image.',
+  imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+        });
+}
+saludar ( );
+
+
+
+
