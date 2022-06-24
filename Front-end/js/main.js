@@ -720,23 +720,40 @@
 // div.innerHTML = `<b>Esto es negrita</b>`;
 
 
-function saludar ( ) 
+// function saludar ( ) 
+// {
+//     const btn = document.getElementById ('btn')
+//         btn.addEventListener ('click', 
+//         ( )=> {
+// Swal.fire({
+//   title: 'Sweet!',
+//   text: 'Modal with a custom image.',
+//   imageUrl: 'https://unsplash.it/400/200',
+//   imageWidth: 400,
+//   imageHeight: 200,
+//   imageAlt: 'Custom image',
+// })
+//         });
+// }
+// saludar ( );
+
+
+//FUNCIONES DE ORDEN SUPERIOR
+
+function mayorQue ( n )
 {
-    const btn = document.getElementById ('btn')
-        btn.addEventListener ('click', 
-        ( )=> {
-Swal.fire({
-  title: 'Sweet!',
-  text: 'Modal with a custom image.',
-  imageUrl: 'https://unsplash.it/400/200',
-  imageWidth: 400,
-  imageHeight: 200,
-  imageAlt: 'Custom image',
-})
-        });
+    return ( m ) => m>n ;
 }
-saludar ( );
+const mayorQueDiez = mayorQue (10);
+
+console.log (mayorQueDiez (5));
 
 
-
-
+function porCadaUno (arr, fun) 
+{
+    for (const elemto of arr)
+    {
+        fun (elemto);
+    }
+}
+porCadaUno ([1,2,3,4,5,6], console.log);
