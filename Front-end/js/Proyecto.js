@@ -21,7 +21,7 @@ function saludar ( )
     const h2= document.getElementsByTagName ('h2') [0];
     h2.innerText = `¡Bienvenido!. ${nombreUsuario}`;  
 }
-saludar ( );
+// saludar ( );
 
 const  thor = ['Thor', '2.10 Metros', 'Dorado', '1500 años', 'Fuerza sobrehumana', 'Mjolnir'];
 const moonNigth = ['Moon Nigth', '1.80 Metros', 'Black', 'Masculino', '100 años', 'Combate cuerpo a cuerpor', 'Distintas armas como lanza dardos']
@@ -234,8 +234,89 @@ function abrir ( )
              }
          })
       })
+     
 }
 abrir ( );
+function agregarSuperHeroe ( ) {
+    const boton7= document.getElementById ('boton7')
+        boton7.addEventListener ('click' ,
+            ( ) => {
+                const nameAgregado = String (prompt ('Dame el Nombre'));
+                let nameG = (nameAgregado);
+                const estaturaAgregado = String (prompt ('Dame la Estatura'));
+                let estaruraG = (estaturaAgregado);
+                const colorAgregado = String (prompt ('Dame un Color'));
+                let colorG = (colorAgregado);
+                const  generoAgregado = String (prompt ('Masculino o Femenino'));
+                let generoG = (generoAgregado);
+                const  edadAgregado = String (prompt ('Edad De tu Super'));
+                let edadG = (edadAgregado);
+                const poderAgregado = String (prompt ('Cual poder te gustaria'));
+                let poderG = (poderAgregado);
+                const armaAgregado = String (prompt ('Que arma tiene tu super'));
+                let armaG = (armaAgregado);
+                
+                
+                Swal.fire({
+                    title: `${nameG}`,
+                        imageHeight: 400,
+                        imageAlt: 'Adios',
+                        showCancelButton: true,
+                        confirmButtonText: 'Mas',
+                        cancelButtonText: 'No mas',               
+                }).then ((resultado)=> {
+                    if (resultado.isConfirmed) {
+                        Swal.fire ({
+                            html: `
+                            <li>Tu Super Heroe ${nameG}</li>
+                            <li>${estaruraG}</li>
+                            <li>${colorG}</li>
+                            <li>${generoG}</li>
+                            <li>${edadG}</li>
+                            <li>${poderG}</li>
+                            <li>${armaG}</li>`,
+                        })
+                    }
+                    else {
+                        Swal.fire ({
+                            icon: 'error',
+                            title: 'Adios'
+                        })
+                    }
+                })
+            }
+)}
+agregarSuperHeroe ( );
+
+
+function agregarSuperHeroeImagen ( ) {
+    const boton8= document.getElementById ('boton8')
+        boton8.addEventListener ('click' ,
+            ( ) => { 
+                const { value: file } = await Swal.fire({
+                    title: 'Select image',
+                    input: 'file',
+                    inputAttributes: {
+                      'accept': 'image/*',
+                      'aria-label': 'Upload your profile picture'
+                    }
+                  })
+                  if (file) {
+                    const reader = new FileReader()
+                    reader.onload = (e) => {
+                      Swal.fire({
+                        title: 'Your uploaded picture',
+                        imageUrl: e.target.result,
+                        imageAlt: 'The uploaded picture'
+                      })
+                    }
+                    reader.readAsDataURL(file)
+                }
+            })
+}
+agregarSuperHeroeImagen ( );
+
+
 
 
 

@@ -769,19 +769,21 @@
 
 // Storage// setlitem ^ getltem
 
-// localStorage.setItem ('Servidor', ['Mejor del mundo' , 'Alan']);
-// localStorage.setItem ('Servidor Nombres', 'Manuel' );
 
-// localStorage.setItem ('Nombre0', 'Ruth')
-// localStorage.setItem ('Nombre1', 'Wilson')
 
-// let nombreUsuario = localStorage.getItem ('Nombre0')
-// let nombreUsuario1 = localStorage.getItem ('Nombre1');
+localStorage.setItem ('Servidor', ['Mejor del mundo' , 'Alan']);
+localStorage.setItem ('Servidor Nombres', 'Manuel' );
 
-//     const h1 = document.createElement ('h1')
-//     h1.innerHTML = `<h1> ${nombreUsuario} </h1> <h1> ${nombreUsuario1} </h1>`
+localStorage.setItem ('Nombre0', 'Ruth')
+localStorage.setItem ('Nombre1', 'Wilson')
 
-//     document.body.appendChild (h1);
+let nombreUsuario = localStorage.getItem ('Nombre0')
+let nombreUsuario1 = localStorage.getItem ('Nombre1');
+
+    const h1 = document.createElement ('h1')
+    h1.innerHTML = `<h1> ${nombreUsuario} </h1> <h1> ${nombreUsuario1} </h1>`
+
+    document.body.appendChild (h1);
 
 
 // CAMBIAR MODO
@@ -812,19 +814,19 @@
 // }
 
 
-// sessionStorage.setItem ('Nombre1', 'Niky1');
+sessionStorage.setItem ('Nombre1', 'Niky1');
 
-// sessionStorage.setItem ('Nombre2', 'Niky2');
+sessionStorage.setItem ('Nombre2', 'Niky2');
 
-// sessionStorage.setItem ('Nombre3', 'Niky3');
+sessionStorage.setItem ('Nombre3', 'Niky3');
 
-// alert (sessionStorage.getItem ('Nombre1'));
+alert (sessionStorage.getItem ('Nombre1'));
 
-// for (let i=0; i < sessionStorage.length; i++)
-// {
-//     let key = sessionStorage.key (i);
-//     console.log (sessionStorage.getItem (key));
-// }
+for (let i=0; i < sessionStorage.length; i++)
+{
+    let key = sessionStorage.key (i);
+    console.log (sessionStorage.getItem (key));
+}
 
 // JSON 
 
@@ -836,3 +838,4 @@ const usario = {
 localStorage.setItem ('Usuario', JSON.stringify(usario));
 
 console.log (JSON.parse(localStorage.getItem ('Usuario')));
+
