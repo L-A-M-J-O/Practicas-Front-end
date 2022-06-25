@@ -740,20 +740,99 @@
 
 //FUNCIONES DE ORDEN SUPERIOR
 
-function mayorQue ( n )
-{
-    return ( m ) => m>n ;
+// function mayorQue ( n )
+// {
+//     return ( m ) => m>n ;
+// }
+// const mayorQueDiez = mayorQue (10);
+
+// console.log (mayorQueDiez (5));
+
+
+// function porCadaUno (arr, fun) 
+// {
+//     for (const elemto of arr)
+//     {
+//         fun (elemto);
+//     }
+// }
+// porCadaUno ([1,2,3,4,5,6], console.log);
+
+
+// let numero = [1,2,3,4,5,6,7];
+
+// const res01 = numero.forEach (x => x * 5 );
+// console.log (res01);
+
+// const res02 = numero.map (x => x * 5);
+// console.log (res02);
+
+// Storage// setlitem ^ getltem
+
+// localStorage.setItem ('Servidor', ['Mejor del mundo' , 'Alan']);
+// localStorage.setItem ('Servidor Nombres', 'Manuel' );
+
+// localStorage.setItem ('Nombre0', 'Ruth')
+// localStorage.setItem ('Nombre1', 'Wilson')
+
+// let nombreUsuario = localStorage.getItem ('Nombre0')
+// let nombreUsuario1 = localStorage.getItem ('Nombre1');
+
+//     const h1 = document.createElement ('h1')
+//     h1.innerHTML = `<h1> ${nombreUsuario} </h1> <h1> ${nombreUsuario1} </h1>`
+
+//     document.body.appendChild (h1);
+
+
+// CAMBIAR MODO
+
+// let modoDark = localStorage.getItem ('Cambio');
+
+// if ( !modoDark)
+// {
+//     modoDark = 'Dark';
+// }
+// const modo = document.createElement ('button');
+// modo.innerHTML = `Dark ${modoDark}`
+// modo.addEventListener ('click', ( ) =>{
+//     setMode ( modoDark );
+// });
+// document.body.appendChild (modo);
+
+// function setMode ( modoDark)
+// {
+//     if (modoDark === 'ligth'){
+//         document.body.setAttribute ('style', 'background-color: black; color;white');
+//         localStorage.setItem ('Cambio', 'Dark');
+//     }
+//     else {
+//         document.body.setAttribute ('style', 'background-color: white; color;black');
+//         localStorage.setItem ('Cambio', 'ligth');
+//     } 
+// }
+
+
+// sessionStorage.setItem ('Nombre1', 'Niky1');
+
+// sessionStorage.setItem ('Nombre2', 'Niky2');
+
+// sessionStorage.setItem ('Nombre3', 'Niky3');
+
+// alert (sessionStorage.getItem ('Nombre1'));
+
+// for (let i=0; i < sessionStorage.length; i++)
+// {
+//     let key = sessionStorage.key (i);
+//     console.log (sessionStorage.getItem (key));
+// }
+
+// JSON 
+
+const usario = {
+    id: 1,
+    nombre: 'Alan',
+    apellido: 'Naranjo'
 }
-const mayorQueDiez = mayorQue (10);
+localStorage.setItem ('Usuario', JSON.stringify(usario));
 
-console.log (mayorQueDiez (5));
-
-
-function porCadaUno (arr, fun) 
-{
-    for (const elemto of arr)
-    {
-        fun (elemto);
-    }
-}
-porCadaUno ([1,2,3,4,5,6], console.log);
+console.log (JSON.parse(localStorage.getItem ('Usuario')));
