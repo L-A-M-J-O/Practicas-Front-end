@@ -267,6 +267,7 @@ function agregarSuperHeroe ( ) {
                 }).then ((resultado)=> {
                     if (resultado.isConfirmed) {
                         Swal.fire ({
+                            icon: 'info',
                             html: `
                             <li>Tu Super Heroe ${nameG}</li>
                             <li>${estaruraG}</li>
