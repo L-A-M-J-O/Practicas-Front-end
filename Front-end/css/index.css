@@ -5,15 +5,9 @@
 }
 
 .main {
-  height: 800px;
-  background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.568), rgba(0, 0, 0, 0.856)), url("/Front-end/img/galina-nelyubova--dIVAH5wK_w-unsplash.jpg");
+  height: 680px;
+  background-image: linear-gradient(to right top, #000000, #361c1e, #67312a, #954e2d, #ba7425, #ba7425, #ba7425, #ba7425, #954e2d, #67312a, #361c1e, #000000);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%, 100%;
-}
-
-a {
-  font-size: 40px;
-  font-weight: 700;
-  font-style: inherit;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */  
