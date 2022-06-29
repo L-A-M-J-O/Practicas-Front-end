@@ -4,10 +4,63 @@
   box-sizing: border-box;
 }
 
+.texto-name {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 50px;
+  font-family: 'Bebas Neue', cursive;
+}
 .main {
-  height: 680px;
-  background-image: linear-gradient(to right top, #000000, #361c1e, #67312a, #954e2d, #ba7425, #ba7425, #ba7425, #ba7425, #954e2d, #67312a, #361c1e, #000000);
+  height: 900px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%, 100%;
 }/*# sourceMappingURL=index.css.map */  
+
+.card1 {
+  background-color: white;
+  position: relative;
+}
+.card1 ::after{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content:  ' ';
+  background-image: linear-gradient(to right, #c02425, #f0cb35);
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  z-index: -1;
+}
+.colorC {
+  background-color: white;
+  position: relative;
+}
+.colorC::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content:  ' ';
+  background-image: linear-gradient(to right, #ff512f, #f09819);
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  z-index: -1;
+}
+.card {
+  background-color: white;
+  height: 100px;
+  width: 300px;
+  position: relative;
+}
+.card::after{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content:  ' ';
+  background-image: linear-gradient(to right, #ff512f, #f09819);
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  z-index: -1;
+}

@@ -8,36 +8,62 @@
     <title>Proyecto JS Alan Naranjo</title>
 
     <link rel="stylesheet" href="/Front-end/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body>
-
   <main class=" main py-6 px-4 sm:p-6 md:py-10 md:px-8 ">
+    <div class="card m-10 flex-col justify-center items-center">
+      <h1 class="texto-name text-black text-center p-7 mt-10" id="h1N"></h1>
+    </div>
     <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
       <div class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-        <h1 class="mt-4 text-6xl font-bold text-white sm:text-white-900 md:text-5xl dark:sm:text-white">Bienvenidos, Este es mi proyecto que pronto sera un video juego</h1>
-        <h1 class="mt-4 text-2xl font-bold text-white sm:text-white-900 md:text-2xl dark:sm:text-white">Welcome, This is my project that will soon be a videogame</h1>
-        <p class="text-sm leading-10 font-medium text-white sm:text-white-500 dark:sm:text-white">Alan Mateo Naranjo Alvarado</p>
+        <h1 class="mt-4 text-6xl font-bold text-white sm:text-white-900 md:text-5xl dark:sm:text-black">Bienvenidos, Este es mi proyecto que pronto sera un video juego</h1>
+        <h1 class="mt-4 text-2xl font-bold text-white sm:text-white-900 md:text-2xl dark:sm:text-black">Welcome, This is my project that will soon be a videogame</h1>
+        <p class="text-sm leading-10 font-medium text-white sm:text-white-500 dark:sm:text-black">Alan Mateo Naranjo Alvarado</p>
       </div>
       <div class="grid gap-6 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
-        <button id="boton1" class="hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold transition duration-500">Thor</button>
-        <button id="boton2" class="hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Moon Nigth</button>  
-        <button id="boton3" class="hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Capitan America</button>
-        <button id="boton4" class="hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Loki</button>
-        <button id="boton5" class="hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Thanos</button>
-        <button id="boton6" class="hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Hulk</button>
-        <button id="boton7" class="hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Agregar Nuevo SuperHeroe</button>
-        <button id="boton8" class="hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Imagen de tu SuperHeroe</button>
+        <button id="boton1" class="colorC hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold transition duration-500">Thor</button>
+        <button id="boton2" class="colorC hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Moon Nigth</button>  
+        <button id="boton3" class="colorC hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Capitan America</button>
+        <button id="boton4" class="colorC hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Loki</button>
+        <button id="boton5" class="colorC hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Thanos</button>
+        <button id="boton6" class="colorC hover:bg-white border-4 hover:text-black border-r-stone-200 text-white italic font-bold  transition duration-500">Hulk</button>
+        <button id="boton7" class="colorC hover:bg-black border-4 hover:text-white border-r-stone-200 text-black italic font-bold  transition duration-500">Agregar Nuevo SuperHeroe</button>
+        <button id="boton8" class="colorC hover:bg-black border-4 hover:text-white border-r-stone-200 text-black italic font-bold  transition duration-500 ">Imagen de tu SuperHeroe
+          <input class="mt-6" type="file" id="input-file"/>
+        </button>
+
       </div>
       <div class="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
-        <button  class="bg-yellow-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg mt-8 "><a href="https://github.com/L-A-M-J-O" target="_blank">Mi GitHub</a></button>
-        <button  class="bg-yellow-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg mt-8 "><a href="https://ladign-3c53c.web.app/#" target="_blank">Lading</a></button>
-        <button  class="bg-yellow-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg mt-8 "><a href="https://www.linkedin.com/in/alann3009200330092003/" target="_blank">Linkedin</a></button>
+        <button  class="colorC text-black text-sm leading-6 font-medium py-4 px-4 rounded-lg mt-8 mr-4"><a href="https://github.com/L-A-M-J-O" target="_blank">Mi GitHub</a></button>
+        <button  class="colorC text-black text-sm leading-6 font-medium py-4 px-5 rounded-lg mt-8 mr-4"><a href="https://ladign-3c53c.web.app/#" target="_blank">Lading</a></button>
+        <button  class="colorC text-black text-sm leading-6 font-medium py-4 px-6 rounded-lg mt-8 "><a href="https://www.linkedin.com/in/alann3009200330092003/" target="_blank">Linkedin</a></button>
       </div>
     </div>
+    <section>
+      <header class="space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
+        <div class="flex items-center justify-between">
+          <h2 class=" text-black font-bold">Projects</h2>
+          <a href="/new" class="colorC hover:bg-blue-400 group flex items-center rounded-md  text-black text-sm font-medium pl-2 pr-3 py-2 shadow-sm">
+            <svg width="20" height="20" fill="currentColor" class="mr-2" aria-hidden="true">
+              <path d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z" />
+            </svg>
+            New
+          </a>
+        </div>
+        <form class="group relative">
+          <svg width="20" height="20" fill="currentColor" class="absolute left-3 top-1/2 -mt-2.5 text-slate-400 pointer-events-none group-focus-within:text-gray-500" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+          </svg>
+          <input class="focus:ring-2 focus:ring-black focus:outline-none appearance-none w-full text-sm leading-6 text-black placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm" type="text" aria-label="Filter projects" placeholder="Filter projects...">
+        </form>
+      </header>
   </main>
 </body>
 
