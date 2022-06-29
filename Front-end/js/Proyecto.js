@@ -5,18 +5,28 @@ function saludar ( )
     const nombre = document.getElementById ('h1N');
     nombre.innerText = ` Bienvenido ${nomprePedir}`;
 }
-// saludar ( );
+saludar ( );
 
+function boton8 ( ) 
+{
+    const boton8 = document.getElementById ('boton8')
+    boton8.addEventListener ('click' ,( )=> {
+        alert ('TE RECOMIENDO ESTA SERIE')
+    })
+}
+boton8 ( );
+    
 
 
 function preguntarN$P () 
 {
     let pregunta0 = String (prompt ('¿Te gusta Marvel?'));
 
-    let respuesta2 = pregunta0 === 'Si' ? 'Vale sumerjete en esta aventura de conocer a tus Super Heroes' : 'Vale da te una oportunidad de conocer todo este universo'
+    let respuesta2 = pregunta0 === 'Si' ? `Busca el boton 8` : 'Vale da te una oportunidad de conocer todo este universo'
     alert (respuesta2);
 }
-// preguntarN$P ( );
+preguntarN$P ( );
+
 
 
 function SuperHeroes (a, b, c, d, h, j) 
@@ -301,11 +311,10 @@ function agregarSuperHeroe ( ) {
             }
 )}
 agregarSuperHeroe ( );
-function agregarSuperHeroeImagen ( ) {
-    const boton8= document.getElementById ('boton8')
-        boton8.addEventListener ('click' ,
-            ( ) => {
-                
-            })}
-agregarSuperHeroeImagen ( );
+// function agregarSuperHeroeImagen ( ) {
+//     const boton8= document.getElementById ('boton8')
+//         boton8.addEventListener ('click' ,
+//             ( ) => {
+//             })}
+// agregarSuperHeroeImagen ( );
 
