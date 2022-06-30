@@ -959,56 +959,108 @@
 
 // SETTIMEOUT
 
-console.log ('main');
-console.log ('one');
-console.log ('two');
-setTimeout (( )=> 
+// console.log ('main');
+// console.log ('one');
+// console.log ('two');
+// setTimeout (( )=> 
+// {
+//     mostrarDatos ( );
+// },3000)
+// console.log ('Tree');
+// console.log ('Four');
+// console.log ('Five');
+// function mostrarDatos ( ) 
+// {
+//     console.log ('1')
+//     console.log ('2')
+//     console.log ('3')
+// }
+
+
+// //SETINTERVAL
+
+// const btn = document.getElementById ('btn');
+// btn.setAttribute ('class', 'colorC')
+
+// let contador = 0;
+
+// let intervalHanlder = setInterval ( ()=>
+// {
+//     btn.innerHTML = `han pasado ${contador} segundos`
+//     contador++
+
+//     if (contador ===6) 
+//     {
+//         clearInterval (intervalHanlder);
+//     }
+// },1000)
+
+//     const promise = (respuesta)=> new Promise ((resolve, reject)=> {
+//         if (respuesta)
+//         {
+//             resolve ('Correcto la promesa');
+//         }
+//         else 
+//         {
+//             reject ('No es correra la promesa');
+//         }
+//     })
+// console.log (promise); 
+// promise (true)
+// .then ((respuesta)=>console.log (respuesta.resolve))
+// .catch ((error)=>console.log (error))
+
+// const producto = {id:1, nombre:'leche', precio:1000, promociones:'20%' };
+// const producto1 = {id:1, nombre:'Agua', precio:900, promociones:'10%' };
+
+// const {id, nombre,precio} = producto;
+// const {id: idProducto1, nombre:nombreProducto1, precio:precioProducto1} = productos1;
+
+// console.log (id, nombre, precio);
+// console.log (idProducto1, nombreProducto1, precioProducto1);
+
+// programarAcciones ( );
+
+// function programarAcciones ( ) 
+// {
+//     programarBotonVer ( );
+// }
+
+
+
+// function cargarListadoDePosts ( ) ;
+// {
+    
+//     fetch ('https://jsonplaceholder.typicode.com/posts/1')
+//     .then ((respuesta)=>respuesta.json ())
+//     .then((json)=>mostrarListadoDePosts (json))
+
+// }
+
+// function mostrarListadoDePosts (posts)
+// {
+//     const container = document.getElementById ('appContainer')
+//     posts.forEach ((blogpost) => 
+//     {
+//         mostrarPost (blogpost, container)
+//     })
+// }
+
+// function mostrarPost (post, div)
+// {
+//     const divPost = document.createElement ('div')
+//     divPost.innerHTML= `<h2>${post.title}</h2>
+//                                         <p>${post.body}</p>
+//                                         <hr>`
+//     div.appendChild(divPost)              
+// }
+
+function programarBotonVer ( )
 {
-    mostrarDatos ( );
-},3000)
-console.log ('Tree');
-console.log ('Four');
-console.log ('Five');
-function mostrarDatos ( ) 
-{
-    console.log ('1')
-    console.log ('2')
-    console.log ('3')
-}
-
-
-//SETINTERVAL
-
-const btn = document.getElementById ('btn');
-btn.setAttribute ('class', 'colorC')
-
-let contador = 0;
-
-let intervalHanlder = setInterval ( ()=>
-{
-    btn.innerHTML = `han pasado ${contador} segundos`
-    contador++
-
-    if (contador ===6) 
+    const btn=document.getElementById('ver')
+    btn.addEventListener = ('click', ( )=>
     {
-        clearInterval (intervalHanlder);
-    }
-},1000)
-
-    const promise = (respuesta)=> new Promise ((resolve, reject)=> {
-        if (respuesta)
-        {
-            resolve ('Correcto la promesa');
-        }
-        else 
-        {
-            reject ('No es correra la promesa');
-        }
+        alert ('Hello');
     })
-console.log (promise); 
-
-
-
-promise (true)
-.then ((respuesta)=>console.log (respuesta.resolve))
-.catch ((error)=>console.log (error))
+}
+programarBotonVer ( );
