@@ -1,3 +1,8 @@
+setTimeout ( ( )=> 
+{
+    preguntarN$P ( );
+},3000)
+
 
 function saludar ( )
 {
@@ -7,6 +12,7 @@ function saludar ( )
 }
 saludar ( );
 
+
 function boton8 ( ) 
 {
     const boton8 = document.getElementById ('boton8')
@@ -15,9 +21,8 @@ function boton8 ( )
     })
 }
 boton8 ( );
+
     
-
-
 function preguntarN$P () 
 {
     let pregunta0 = String (prompt ('¿Te gusta Marvel?'));
@@ -25,7 +30,6 @@ function preguntarN$P ()
     let respuesta2 = pregunta0 === 'Si' ? `Busca el boton 8` : 'Vale da te una oportunidad de conocer todo este universo'
     alert (respuesta2);
 }
-preguntarN$P ( );
 
 
 

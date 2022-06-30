@@ -771,19 +771,19 @@
 
 
 
-localStorage.setItem ('Servidor', ['Mejor del mundo' , 'Alan']);
-localStorage.setItem ('Servidor Nombres', 'Manuel' );
+// localStorage.setItem ('Servidor', ['Mejor del mundo' , 'Alan']);
+// localStorage.setItem ('Servidor Nombres', 'Manuel' );
 
-localStorage.setItem ('Nombre0', 'Ruth')
-localStorage.setItem ('Nombre1', 'Wilson')
+// localStorage.setItem ('Nombre0', 'Ruth')
+// localStorage.setItem ('Nombre1', 'Wilson')
 
-let nombreUsuario = localStorage.getItem ('Nombre0')
-let nombreUsuario1 = localStorage.getItem ('Nombre1');
+// let nombreUsuario = localStorage.getItem ('Nombre0')
+// let nombreUsuario1 = localStorage.getItem ('Nombre1');
 
-    const h1 = document.createElement ('h1')
-    h1.innerHTML = `<h1> ${nombreUsuario} </h1> <h1> ${nombreUsuario1} </h1>`
+//     const h1 = document.createElement ('h1')
+//     h1.innerHTML = `<h1> ${nombreUsuario} </h1> <h1> ${nombreUsuario1} </h1>`
 
-    document.body.appendChild (h1);
+//     document.body.appendChild (h1);
 
 
 // CAMBIAR MODO
@@ -814,30 +814,30 @@ let nombreUsuario1 = localStorage.getItem ('Nombre1');
 // }
 
 
-sessionStorage.setItem ('Nombre1', 'Niky1');
+// sessionStorage.setItem ('Nombre1', 'Niky1');
 
-sessionStorage.setItem ('Nombre2', 'Niky2');
+// sessionStorage.setItem ('Nombre2', 'Niky2');
 
-sessionStorage.setItem ('Nombre3', 'Niky3');
+// sessionStorage.setItem ('Nombre3', 'Niky3');
 
-alert (sessionStorage.getItem ('Nombre1'));
+// alert (sessionStorage.getItem ('Nombre1'));
 
-for (let i=0; i < sessionStorage.length; i++)
-{
-    let key = sessionStorage.key (i);
-    console.log (sessionStorage.getItem (key));
-}
+// for (let i=0; i < sessionStorage.length; i++)
+// {
+//     let key = sessionStorage.key (i);
+//     console.log (sessionStorage.getItem (key));
+// }
 
 // JSON 
 
-const usario = {
-    id: 1,
-    nombre: 'Alan',
-    apellido: 'Naranjo'
-}
-localStorage.setItem ('Usuario', JSON.stringify(usario));
+// const usario = {
+//     id: 1,
+//     nombre: 'Alan',
+//     apellido: 'Naranjo'
+// }
+// localStorage.setItem ('Usuario', JSON.stringify(usario));
 
-console.log (JSON.parse(localStorage.getItem ('Usuario')));
+// console.log (JSON.parse(localStorage.getItem ('Usuario')));
 
 
 // ** TRABAJO DE SILLA **//
@@ -957,3 +957,58 @@ console.log (JSON.parse(localStorage.getItem ('Usuario')));
 // }
 // maquina ( );
 
+// SETTIMEOUT
+
+console.log ('main');
+console.log ('one');
+console.log ('two');
+setTimeout (( )=> 
+{
+    mostrarDatos ( );
+},3000)
+console.log ('Tree');
+console.log ('Four');
+console.log ('Five');
+function mostrarDatos ( ) 
+{
+    console.log ('1')
+    console.log ('2')
+    console.log ('3')
+}
+
+
+//SETINTERVAL
+
+const btn = document.getElementById ('btn');
+btn.setAttribute ('class', 'colorC')
+
+let contador = 0;
+
+let intervalHanlder = setInterval ( ()=>
+{
+    btn.innerHTML = `han pasado ${contador} segundos`
+    contador++
+
+    if (contador ===6) 
+    {
+        clearInterval (intervalHanlder);
+    }
+},1000)
+
+    const promise = (respuesta)=> new Promise ((resolve, reject)=> {
+        if (respuesta)
+        {
+            resolve ('Correcto la promesa');
+        }
+        else 
+        {
+            reject ('No es correra la promesa');
+        }
+    })
+console.log (promise); 
+
+
+
+promise (true)
+.then ((respuesta)=>console.log (respuesta.resolve))
+.catch ((error)=>console.log (error))
