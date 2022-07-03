@@ -6,9 +6,9 @@ setTimeout ( ( )=>
 
 function saludar ( )
 {
-    const nomprePedir = String ( prompt ('Dame tu nombre'));
+    const nombrePedir = String ( prompt ('Dame tu nombre'));
     const nombre = document.getElementById ('h1N');
-    nombre.innerText = ` Bienvenido ${nomprePedir}`;
+    nombre.innerText = ` Bienvenido ${nombrePedir}`;
 }
 saludar ( );
 
