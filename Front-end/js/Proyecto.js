@@ -1,7 +1,7 @@
-setTimeout ( ( )=> 
-{
-    preguntarN$P ( );
-},3000)
+// setTimeout ( ( )=> 
+// {
+//     preguntarN$P ( );
+// },3000)
 
 
 function saludar ( )
@@ -10,7 +10,7 @@ function saludar ( )
     const nombre = document.getElementById ('h1N');
     nombre.innerText = ` Bienvenido ${nombrePedir}`;
 }
-saludar ( );
+// saludar ( );
 
 
 function boton8 ( ) 
@@ -20,7 +20,7 @@ function boton8 ( )
         alert ('TE RECOMIENDO ESTA SERIE')
     })
 }
-boton8 ( );
+// boton8 ( );
 
     
 function preguntarN$P () 
@@ -30,7 +30,6 @@ function preguntarN$P ()
     let respuesta2 = pregunta0 === 'Si' ? `Busca el boton 8` : 'Vale da te una oportunidad de conocer todo este universo'
     alert (respuesta2);
 }
-
 
 
 function SuperHeroes (a, b, c, d, h, j) 
@@ -315,10 +314,38 @@ function agregarSuperHeroe ( ) {
             }
 )}
 agregarSuperHeroe ( );
-// function agregarSuperHeroeImagen ( ) {
-//     const boton8= document.getElementById ('boton8')
-//         boton8.addEventListener ('click' ,
-//             ( ) => {
-//             })}
-// agregarSuperHeroeImagen ( );
+
+
+const url = 'https://pokeapi.co/api/v2/pokemon/1/'
+
+fetch (url)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem')
+    btn.innerHTML = `
+    <p>${data.order}</p>
+    <p>${data.name}</p>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url2 = 'https://pokeapi.co/api/v2/pokemon/2/'
+
+fetch (url2)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem1')
+    btn.innerHTML = `
+    <p>${data.order}</p>
+    <p>${data.name}</p>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
 
