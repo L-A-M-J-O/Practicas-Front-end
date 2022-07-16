@@ -20,7 +20,7 @@ function boton8 ( )
         alert ('TE RECOMIENDO ESTA SERIE')
     })
 }
-// boton8 ( );
+boton8 ( );
 
     
 function preguntarN$P () 
@@ -316,6 +316,8 @@ function agregarSuperHeroe ( ) {
 agregarSuperHeroe ( );
 
 
+//LLAMADOS DE API 
+
 const url = 'https://pokeapi.co/api/v2/pokemon/1/'
 
 fetch (url)
@@ -324,28 +326,256 @@ fetch (url)
 
     let btn = document.getElementById ('elem')
     btn.innerHTML = `
-    <p>${data.order}</p>
-    <p>${data.name}</p>
+    <button>${data.name}</button>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
 })
 .catch(error => console.log (error))
 
-const url2 = 'https://pokeapi.co/api/v2/pokemon/2/'
+const url1 = 'https://pokeapi.co/api/v2/pokemon/25/'
 
-fetch (url2)
+fetch (url1)
 .then(response => response.json())
 .then (data => {
 
     let btn = document.getElementById ('elem1')
     btn.innerHTML = `
-    <p>${data.order}</p>
-    <p>${data.name}</p>
+    <button>${data.name}</button>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
 })
 .catch(error => console.log (error))
 
+const url2 = 'https://pokeapi.co/api/v2/pokemon/30/'
+fetch (url2)
+.then(response => response.json())
+.then (data => {
 
+    let btn = document.getElementById ('elem2')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url3 = 'https://pokeapi.co/api/v2/pokemon/40/'
+fetch (url3)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem3')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url4 = 'https://pokeapi.co/api/v2/pokemon/10/'
+fetch (url4)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem4')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url5 = 'https://pokeapi.co/api/v2/pokemon/12/'
+fetch (url5)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem5')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url6 = 'https://pokeapi.co/api/v2/pokemon/8/'
+fetch (url6)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem6')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url7 = 'https://pokeapi.co/api/v2/pokemon/2/'
+fetch (url7)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem7')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url8 = 'https://pokeapi.co/api/v2/pokemon/67/'
+fetch (url8)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem8')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url9 = 'https://pokeapi.co/api/v2/pokemon/57/'
+fetch (url9)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem9')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url10 = 'https://pokeapi.co/api/v2/pokemon/27/'
+fetch (url10)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem10')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url11 = 'https://pokeapi.co/api/v2/pokemon/52/'
+fetch (url11)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem11')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url12 = 'https://pokeapi.co/api/v2/pokemon/23/'
+fetch (url12)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem12')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url13 = 'https://pokeapi.co/api/v2/pokemon/18/'
+fetch (url13)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem13')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url14 = 'https://pokeapi.co/api/v2/pokemon/160/'
+fetch (url14)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem14')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url15 = 'https://pokeapi.co/api/v2/pokemon/100/'
+fetch (url15)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem15')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url16 = 'https://pokeapi.co/api/v2/pokemon/99/'
+fetch (url16)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem16')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+const url17= 'https://pokeapi.co/api/v2/pokemon/200/'
+fetch (url17)
+.then(response => response.json())
+.then (data => {
+
+    let btn = document.getElementById ('elem17')
+    btn.innerHTML = `
+    <button>${data.name}</button>
+    <img src='${data.sprites.front_default}'>
+    `;
+    console.log(data)
+})
+.catch(error => console.log (error))
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
