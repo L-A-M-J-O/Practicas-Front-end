@@ -1,7 +1,7 @@
-// setTimeout ( ( )=> 
-// {
-//     preguntarN$P ( );
-// },3000)
+setTimeout ( ( )=> 
+{
+    preguntarN$P ( );
+},10000)
 
 
 function saludar ( )
@@ -10,7 +10,7 @@ function saludar ( )
     const nombre = document.getElementById ('h1N');
     nombre.innerText = ` Bienvenido ${nombrePedir}`;
 }
-// saludar ( );
+saludar ( );
 
 
 function boton8 ( ) 
@@ -326,7 +326,7 @@ fetch (url)
 
     let btn = document.getElementById ('elem')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -341,7 +341,7 @@ fetch (url1)
 
     let btn = document.getElementById ('elem1')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -355,7 +355,7 @@ fetch (url2)
 
     let btn = document.getElementById ('elem2')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -369,7 +369,7 @@ fetch (url3)
 
     let btn = document.getElementById ('elem3')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -383,7 +383,7 @@ fetch (url4)
 
     let btn = document.getElementById ('elem4')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -397,7 +397,7 @@ fetch (url5)
 
     let btn = document.getElementById ('elem5')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -411,7 +411,7 @@ fetch (url6)
 
     let btn = document.getElementById ('elem6')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -425,7 +425,7 @@ fetch (url7)
 
     let btn = document.getElementById ('elem7')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -439,7 +439,7 @@ fetch (url8)
 
     let btn = document.getElementById ('elem8')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -453,7 +453,7 @@ fetch (url9)
 
     let btn = document.getElementById ('elem9')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -467,7 +467,7 @@ fetch (url10)
 
     let btn = document.getElementById ('elem10')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -481,7 +481,7 @@ fetch (url11)
 
     let btn = document.getElementById ('elem11')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -495,7 +495,7 @@ fetch (url12)
 
     let btn = document.getElementById ('elem12')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -509,7 +509,7 @@ fetch (url13)
 
     let btn = document.getElementById ('elem13')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -523,7 +523,7 @@ fetch (url14)
 
     let btn = document.getElementById ('elem14')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -537,7 +537,7 @@ fetch (url15)
 
     let btn = document.getElementById ('elem15')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -551,7 +551,7 @@ fetch (url16)
 
     let btn = document.getElementById ('elem16')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
@@ -565,17 +565,34 @@ fetch (url17)
 
     let btn = document.getElementById ('elem17')
     btn.innerHTML = `
-    <button>${data.name}</button>
+    <h1 class="mt-4">${data.name}</h1>
     <img src='${data.sprites.front_default}'>
     `;
     console.log(data)
 })
 .catch(error => console.log (error))
 
+
+
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 10,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
     },
   });

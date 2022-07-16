@@ -22,26 +22,26 @@
 <body>
   <main class=" main py-6 px-4 sm:p-6 md:py-10 md:px-8 ">
     <video autoplay loop muted plays-inline class="back-video">
-      <source src="/Practicas-Front-end-1/Front-end/img/Chroma Key - 24313.mp4" type="video/mp4">
+      <source src="/Practicas-Front-end-1/Front-end/img/video.mp4" type="video/mp4">
     </video>
-    <div class="card m-10 flex-col justify-center items-center">
-      <h1 class="text-white italic font-bold text-center mt-5 pt-3 text-lg" id="h1N"></h1>
+    <div class="bg-transparent card m-10 flex-col justify-center items-center"> 
+      <h1 class="text-white italic font-bold text-center text-2xl" id="h1N"></h1>
     </div>
     <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
       <div class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-        <h1 class="Sombra mt-4 text-6xl font-bold text-white sm:text-white-900 md:text-5xl dark:sm:text-white ">Bienvenidos, Este es mi proyecto que pronto sera un video juego</h1>
-        <h1 class="Sombra mt-4 text-2xl font-bold text-white sm:text-white-900 md:text-2xl dark:sm:text-white">Welcome, This is my project that will sowhite  a videogame</h1>
-        <p class="text-sm leading-10 font-medium text-white sm:text-white-500 dark:sm:text-white">Alan Mateo Naranjo Alvarado</p>
+        <h1 class="mt-4 text-6xl font-bold  sm:text-white-900 md:text-5xl dark:sm:text-white">Bienvenidos, Este es mi proyecto que pronto sera un video juego</h1>
+        <h1 class="mt-4 text-2xl font-bold sm:text-white-900 md:text-2xl dark:sm:text-white">Welcome, This is my project that will sowhite  a videogame</h1>
+        <p class="text-sm leading-10 font-medium sm:text-white-500 dark:sm:text-white">Alan Mateo Naranjo Alvarado</p>
       </div>
       <div class="grid gap-6 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
-        <button id="boton1" class=" bg-transparent hover:bg-zinc-900 border-4 hover:text-white border-r-stone-200 text-white italic font-bold transition duration-500">Thor</button>
-        <button id="boton2" class=" bg-transparent hover:bg-zinc-900 border-4 hover:text-white border-r-stone-200 text-white  italic font-bold transition duration-500"">Moon Nigth</button>  
-        <button id="boton3" class=" bg-transparent hover:bg-zinc-900 border-4 hover:text-white border-r-stone-200 text-white  italic font-bold transition duration-500"">Capitan America</button>
-        <button id="boton4" class=" bg-transparent hover:bg-zinc-900 border-4 hover:text-white border-r-stone-200 text-white  italic font-bold transition duration-500"">Loki</button>
-        <button id="boton5" class=" bg-transparent hover:bg-zinc-900 border-4 hover:text-white border-r-stone-200 text-white  italic font-bold transition duration-500"">Thanos</button>
-        <button id="boton6" class=" bg-transparent hover:bg-zinc-900 border-4 hover:text-white border-r-stone-200 text-white  italic font-bold transition duration-500"">Hulk</button>
-        <button id="boton7" class=" bg-transparent hover:bg-zinc-900 border-4 hover:text-white border-r-stone-200 text-white  italic font-bold transition duration-500"">Agregar Nuevo SuperHeroe</button>
-        <button id="boton8" class=" bg-transparent hover:bg-zinc-900 border-4 hover:text-white border-r-stone-200 text-white  italic font-bold transition duration-500"">Boton 8</button>
+        <button id="boton1" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Thor</button>
+        <button id="boton2" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Moon Nigth</button>  
+        <button id="boton3" class=" bg-transparent text-white hover:text-2xl italic font-bold border-4 ">Capitan America</button>
+        <button id="boton4" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Loki</button>
+        <button id="boton5" class=" bg-transparent text-white hover:text-2xl italic font-bold border-4 ">Thanos</button>
+        <button id="boton6" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Hulk</button>
+        <button id="boton7" class=" bg-transparent text-white hover:text-lg italic font-bold border-4 ">Agregar Nuevo SuperHeroe</button>
+        <button id="boton8" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Boton 8</button>
       </div>
       <div class="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
         <button  class="cuadros bg-transparent border-4 hover:text-white border-r-stone-200 text-white transition duration-500"><a href="https://github.com/L-A-M-J-O" target="_blank">Mi GitHub</a></button>
@@ -51,6 +51,56 @@
     </div>
   </main>
     <div class="caja_poke container mt-5">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide container">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem1"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem2"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2 ">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem3"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2 ">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem4"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div  class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem5"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem6"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem7"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2 ">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem8"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
       <div class="row row-cols-1">
         <div class="col-2 border">
           <div id="elem"></div>
@@ -106,26 +156,11 @@
         <div class="col-2 border">
           <div id="elem17"></div>
         </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
       </div>
     </div>
-
-
 </body>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="/Practicas-Front-end-1/Front-end/js/Proyecto.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
