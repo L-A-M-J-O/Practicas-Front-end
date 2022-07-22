@@ -1,7 +1,7 @@
-setTimeout ( ( )=> 
-{
-    preguntarN$P ( );
-},10000)
+// setTimeout ( ( )=> 
+// {
+//     preguntarN$P ( );
+// },10000)
 
 
 function saludar ( )
@@ -10,14 +10,20 @@ function saludar ( )
     const nombre = document.getElementById ('h1N');
     nombre.innerText = ` Bienvenido ${nombrePedir}`;
 }
-saludar ( );
+// saludar ( );
 
 
 function boton8 ( ) 
 {
     const boton8 = document.getElementById ('boton8')
-    boton8.addEventListener ('click' ,( )=> {
-        alert ('TE RECOMIENDO ESTA SERIE')
+    boton8.addEventListener ('click' ,
+    ( )=>{
+        Swal.fire({
+            title: 'Bruja Escarlata & Visiòn ',
+            imageUrl : 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3BEEC79EB9BB3D140F6F90CBB1DD8431ED6DADEB19B6FA83B94463D811037FAC/scale?width=1200&aspectRatio=1.78&format=jpeg',
+            showCancelButton: false,
+            confirmButtonText: 'OK'
+        })
     })
 }
 boton8 ( );
@@ -79,7 +85,7 @@ function abrir ( )
                 showCancelButton: true,
                 confirmButtonText: 'Mas',
                 cancelButtonText: 'No mas'
-        }).then ((resultado)=> {
+        }).then ((resultado)=> {s
             if (resultado.isConfirmed) {
                 Swal.fire ({
                     icon: 'info',
