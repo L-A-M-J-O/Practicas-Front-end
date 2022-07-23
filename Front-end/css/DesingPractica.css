@@ -1,14 +1,11 @@
-/* * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}*/
-
-h1 {
-    font-size: 200px;
-    font-weight: bold;
-    letter-spacing: -40px;
+}
+img {
+    width: 200px;
+    height: 200px;
 }
 
 #animacion {
